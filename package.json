@@ -22,8 +22,7 @@
     "react-scripts": "2.1.8",
     "react-visibility-sensor": "^5.0.2",
     "react-water-wave": "^1.0.3",
-    "react-wow": "^1.0.0",
-    "typewriter-effect": "^2.5.3"
+    "react-wow": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
