@@ -25,7 +25,7 @@ class About extends React.Component {
                         <div className="col-lg-6 col-md-12">
                             <div className="about-addax">
                                 <div className="section-title">
-                                    <h2>We Are Digital <span>Marketing & Branding</span></h2>
+                                    <h2>We Are Digital <span>Payments & Security</span></h2>
                                     <p>We are the eye in the storm of africa's agricultural ecosystem. We are Here.</p>
                                 </div>
 
@@ -38,7 +38,7 @@ class About extends React.Component {
                                 <ul>
                                     <li><i className="fa fa-check"></i>Modern Design</li>
                                     <li><i className="fa fa-check"></i>Awesome Platforms</li>
-                                    <li><i className="fa fa-check"></i>Digital Marketing & Branding</li>
+                                    <li><i className="fa fa-check"></i>Digital payments & Security</li>
                                 </ul>
 
                                 <Link to="#" className="btn btn-primary">Read More</Link>
