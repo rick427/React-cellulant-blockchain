@@ -1,5 +1,5 @@
 import React from 'react';
- 
+
 class WhoWeAre extends React.Component {
     render(){
         return (
@@ -33,7 +33,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-tag"></i>
                                 <h4>We are Creative</h4>
-                                <p>Our Tingg and Agrikore platforms says it all. After much planning, our blockchain is here.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus modi est esse similique eius..</p>
                                 <span>3</span>
                             </div>
                         </div>
