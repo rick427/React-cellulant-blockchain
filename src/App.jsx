@@ -17,7 +17,7 @@ class App extends React.Component {
     }
 
     demoAsyncCall = () => {
-        return new Promise((resolve) => setTimeout(() => resolve(), 2000));
+        return new Promise((resolve) => setTimeout(() => resolve(), 2500));
     }
 
     hashLinkScroll = () => {
