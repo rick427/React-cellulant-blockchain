@@ -15,7 +15,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-users"></i>
                                 <h4>We are Professional</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi maxime blanditiis asperiores, vitae nulla..</p>
+                                <p>We have an outstanding track record for professionalism. We take you seriously and expect the same.</p>
                                 <span>1</span>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-lightbulb-o"></i>
                                 <h4>We are Passionate</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, ducimus nemo nulla voluptatum officia impedit..</p>
+                                <p>We convey a passion in what we create and deliver. All to give back to a great audience.</p>
                                 <span>2</span>
                             </div>
                         </div>
@@ -33,7 +33,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-tag"></i>
                                 <h4>We are Creative</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloribus modi est esse similique eius..</p>
+                                <p>We are creative enough to do deliver platforms like agrikore and Tingg.</p>
                                 <span>3</span>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-scissors"></i>
                                 <h4>We are Efficient</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, officiis? Praesentium neque voluptas dolorum dolor..</p>
+                                <p>We make effective and "on the dot" decisions. No time loss no fuss.</p>
                                 <span>4</span>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-linode"></i>
                                 <h4>We are Unique</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempore nam ea debitis maiores aliquam!.</p>
+                                <p>We provide a fresh new look in a field that has a mono view.</p>
                                 <span>5</span>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ class WhoWeAre extends React.Component {
                             <div className="single-who-we-are">
                                 <i className="fa fa-life-ring"></i>
                                 <h4>We are Support</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident labore, ab eaque iusto eum..</p>
+                                <p>We make sure that you our user base isn't left hanging. </p>
                                 <span>6</span>
                             </div>
                         </div>
