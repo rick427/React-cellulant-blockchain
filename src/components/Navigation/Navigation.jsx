@@ -106,7 +106,7 @@ class Navigation extends React.Component {
                         onClick={() => window.location.refresh()}
                     >
                         <img className="w-25 h-25 mr-3 logo" src={logo} alt="logo"/>
-                        <span>b</span> lockchain
+                        <span>b</span>lockchain
                     </Link>
                     <button 
                         onClick={this.toggleNavbar}

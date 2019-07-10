@@ -22,7 +22,7 @@ class Testimonial extends React.Component {
                                     </div>
 
                                     <div className="client-title">
-                                        <h4>Harrison Kafui</h4>
+                                        <h4>Tom Obinna</h4>
                                         <h5>CTO of Gwarinpa</h5>
                                     </div>
                                 </div>

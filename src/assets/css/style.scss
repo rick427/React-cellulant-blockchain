@@ -393,6 +393,7 @@ Main Header CSS
         color: #ffffff;
         font-weight: 600;
         text-transform: uppercase;
+        letter-spacing: 2px;
 
         span {
             color: $template_color;
@@ -400,7 +401,7 @@ Main Header CSS
                 size: 35px;
                 weight: 700;
             }
-            text-transform: lowercase;
+            text-transform: uppercase;
         }
         &:focus, &:hover {
             color: #ffffff;
@@ -2341,7 +2342,7 @@ Footer Area CSS
             color: #ffffff;
             font-weight: 600;
             text-transform: uppercase;
-            font-size: 35px;
+            font-size: 30px;
         }
         span {
             color: $template_color;
@@ -2349,7 +2350,7 @@ Footer Area CSS
                 size: 40px;
                 weight: 700;
             }
-            text-transform: lowercase;
+            text-transform: uppercase;
         }
     }
     ul {
