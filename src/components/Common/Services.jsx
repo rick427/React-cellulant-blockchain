@@ -5,9 +5,6 @@ import imgThree from '../../assets/images/services-img3.jpg';
 import imgFour from '../../assets/images/services-img4.jpg';
 import imgFive from '../../assets/images/services-img5.jpg';
 import imgSix from '../../assets/images/services-img6.jpg';
-// import imgSeven from '../../assets/images/services-img7.jpg';
-// import imgEight from '../../assets/images/services-img8.jpg';
-// import imgNine from '../../assets/images/services-img9.jpg';
  
 class Services extends React.Component {
     render(){
@@ -32,7 +29,8 @@ class Services extends React.Component {
                                 
                                 <div className="services-content">
                                     <h3>Payment Security</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <p>Your transactions are properly secured using strong
+                                        cryptography to secure your financial transactions.</p>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +47,7 @@ class Services extends React.Component {
                                 
                                 <div className="services-content">
                                     <h3>Smart Contracts</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <p>Create self executing contracts with the terms of the agreement between buyer and seller.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +64,7 @@ class Services extends React.Component {
                                 
                                 <div className="services-content">
                                     <h3>Crypto-Assets</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <p>Our digital assets the MULA is designed to work as a medium of exchange in our ecosystem.</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +81,7 @@ class Services extends React.Component {
                                 
                                 <div className="services-content">
                                     <h3>Analytics</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <p>Check out your orders, smart contracts, and much more via our analytics panel.</p>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +98,7 @@ class Services extends React.Component {
                                 
                                 <div className="services-content">
                                     <h3>Cash out</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <p>Dont feel like hoarding all that MULA's? You can easily cash out those MULA to either Dollars or Naira.</p>
                                 </div>
                             </div>
                         </div>
@@ -116,62 +114,12 @@ class Services extends React.Component {
                                 </div>
                                 
                                 <div className="services-content">
-                                    <h3>Fast & Efficient transactions</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <h3>Fast transactions</h3>
+                                    <p>Via our blockchain, transactions are lightning fast giving you a fluid and seemless UX.</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        {/* <div className="col-lg-4 col-md-6">
-                            <div className="single-services">
-                                <div className="services-img">
-                                    <img src={imgSeven} alt="services-img" />
-                                    
-                                    <div className="icon">
-                                        <i className="fa fa-mobile"></i>
-                                    </div>
-                                </div>
-                                
-                                <div className="services-content">
-                                    <h3>Responsive Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                        </div> */}
-                        
-                        {/* <div className="col-lg-4 col-md-6">
-                            <div className="single-services">
-                                <div className="services-img">
-                                    <img src={imgEight} alt="services-img" />
-                                    
-                                    <div className="icon">
-                                        <i className="fa fa-camera-retro"></i>
-                                    </div>
-                                </div>
-                                
-                                <div className="services-content">
-                                    <h3>Photography</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                        </div> */}
-                        
-                        {/* <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                            <div className="single-services">
-                                <div className="services-img">
-                                    <img src={imgNine} alt="services-img" />
-                                    
-                                    <div className="icon">
-                                        <i className="fa fa-life-ring"></i>
-                                    </div>
-                                </div>
-                                
-                                <div className="services-content">
-                                    <h3>Custom Support</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                </div>
-                            </div>
-                        </div> */}
+                    
                     </div>
                 </div>
             </section>

@@ -104,7 +104,7 @@ class Contact extends React.Component {
                     <div className="section-title">
                         <h4>Get in Touch</h4>
                         <h2> Want to <span>Contact</span> Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Want to make a report or post a question? Fill the form below. You can find us by following the map below if you want a 1-on-1 audience.</p>
                     </div>
                     
                     <div className="row">

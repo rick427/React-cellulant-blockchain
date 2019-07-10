@@ -1,23 +1,12 @@
-import React from 'react'
+import React from 'react';
 import MainBanner from '../PageBanners/MainBannerTwo';
 import Welcome from '../Common/Welcome';
 import About from '../Common/About';
-// import Strategy from '../Common/Strategy';
 import WhoWeAre from '../Common/WhoWeAre';
-// import Ctr from '../Common/Ctr';
-// import Skill from '../Common/Skill';
 import Funfact from '../Common/Funfact';
-// import Team from '../Common/Team';
-// import HowWeWork from '../Common/HowWeWork';
 import Services from '../Common/Services';
-import WhyWeDifferent from '../Common/WhyWeDifferent';
-// import Work from '../Common/Work';
-// import Price from '../Common/Price';
 import Faq from '../Common/Faq';
 import Testimonial from '../Common/Testimonial';
-// import Blog from '../Common/Blog';
-// import Partner from '../Common/Partner';
-// import Subscribe from '../Common/Subscribe';
 import Contact from '../Common/Contact';
 import Footer from '../Common/Footer';
 import GoTop from '../Common/GoTop';
@@ -26,65 +15,39 @@ class HomeTwo extends React.Component {
     render(){
         return (
             <React.Fragment>
-                {/* Main Banner */}
-                <MainBanner />
-                {/* Welcome Area */}
-                <Welcome />
-                {/* About Area */}
-                <About />
-                {/* Strategy Area */}
-                {/* <Strategy /> */}
 
-                {/* Who We Are Area */}
-                <WhoWeAre />
+            {/* Main Banner */}
+            <MainBanner />
 
-                {/* CTR Area */}
-                {/* <Ctr /> */}
+            {/* Welcome Area */}
+            <Welcome />
 
-                {/* Skill Area */}
-                {/* <Skill /> */}
+            {/* About Area */}
+            <About />
 
-                {/* Fact Area */}
-                <Funfact />
+            {/* Who We Are Area */}
+            <WhoWeAre />
 
-                {/* Team Area */}
-                {/* <Team /> */}
+            {/* Fact Area */}
+            <Funfact />
 
-                {/* How We Work */}
-                {/* <HowWeWork /> */}
+            {/* Services Area */}
+            <Services />
 
-                {/* Services Area */}
-                <Services />
+            {/* FAQ Area */}
+            <Faq />
 
-                {/* Why We Are Different */}
-                <WhyWeDifferent />
+            {/* Testimonials Area */}
+            <Testimonial />
 
-                {/* Work Area */}
-                {/* <Work /> */}
+            {/* Contact Area */}
+            <Contact />
 
-                {/* Price Area */}
-                {/* <Price /> */}
+            {/* Footer Area */}
+            <Footer />
 
-                {/* FAQ Area */}
-                <Faq />
-                {/* Testimonials Area */}
-                <Testimonial />
-
-                {/* Blog Area */}
-                {/* <Blog /> */}
-
-                {/* Partner Area */}
-                {/* <Partner /> */}
-
-                {/* Subscribe Area */}
-                {/* <Subscribe /> */}
-
-                {/* Contact Area */}
-                <Contact />
-                {/* Footer Area */}
-                <Footer />
-                <GoTop scrollStepInPx="50" delayInMs="16.66" />
-            </React.Fragment>
+            <GoTop scrollStepInPx="50" delayInMs="16.66" />
+        </React.Fragment>
         );
     }
 }

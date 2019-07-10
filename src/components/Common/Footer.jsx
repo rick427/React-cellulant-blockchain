@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/cell-logo.png';
  
 class Footer extends React.Component {
     render(){
@@ -8,6 +9,7 @@ class Footer extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12">
+                            <img className="h-25 mb-3" src={logo} alt="logo"/>
                             <h4><Link to="/"><span>b</span>lockchain</Link></h4>
                             <ul>
                                 <li><Link to="#" className="fa fa-facebook"></Link></li>

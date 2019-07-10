@@ -3,6 +3,7 @@ import '../../assets/css/font-awesome.min.css';
 import '../../assets/css/animate.css';
 import '../../assets/css/style.scss';
 import '../../assets/css/responsive.scss';
+import logo from '../../assets/images/cell-logo.png';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link, withRouter  } from 'react-router-dom';
@@ -29,27 +30,6 @@ class Navigation extends React.Component {
             }
         });
         window.scrollTo(0, 0);
-
-        // if (!(window.location.pathname === '/blog' || window.location.pathname === '/blog-details')){
-        //     let mainNavLinks = document.querySelectorAll("nav ul li a");
-
-        //     window.addEventListener("scroll", () => {
-        //         let fromTop = window.scrollY;
-            
-        //         mainNavLinks.forEach(link => {
-        //         let section = document.querySelector(link.hash);
-            
-        //             if (
-        //                 section.offsetTop <= fromTop &&
-        //                 section.offsetTop + section.offsetHeight > fromTop
-        //             ) {
-        //                 link.classList.add("active");
-        //             } else {
-        //                 link.classList.remove("active");
-        //             }
-        //         });
-        //     });
-        // }
     }
 
     goToId = (e) => {
@@ -73,13 +53,7 @@ class Navigation extends React.Component {
                             About
                         </Link>
                     </li>
-                    {/* <li className="nav-item">
-                        <Link 
-                            className="nav-link" 
-                            to="/#team"
-                            onClick={() => this.goToId("/#team")}
-                        >Team</Link>
-                    </li> */}
+                    
                     <li className="nav-item">
                         <Link  
                             className="nav-link" 
@@ -87,27 +61,7 @@ class Navigation extends React.Component {
                             onClick={() => this.goToId("/#services")}
                         >Services</Link>
                     </li> 
-                    {/* <li className="nav-item">
-                        <Link 
-                            className="nav-link" 
-                            to="/#work"
-                            onClick={() => this.goToId("/#work")}
-                        >Work</Link>
-                    </li> */}
-                    {/* <li className="nav-item">
-                        <Link 
-                            className="nav-link" 
-                            to="/#price"
-                            onClick={() => this.goToId("/#price")}
-                        >Price</Link>
-                    </li> */}
-                    {/* <li className="nav-item">
-                        <Link 
-                            className="nav-link" 
-                            to="/#blog"
-                            onClick={() => this.goToId("/#blog")}
-                        >Blog</Link>
-                    </li> */}
+                    
                     <li className="nav-item">
                         <Link 
                             className="nav-link" 
@@ -127,21 +81,11 @@ class Navigation extends React.Component {
                 <li className="nav-item">
                     <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#about">About</AnchorLink>
                 </li>
-                {/* <li className="nav-item">
-                    <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#team">Team</AnchorLink>
-                </li> */}
+                
                 <li className="nav-item">
                     <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#services">Services</AnchorLink>
                 </li> 
-                {/* <li className="nav-item">
-                    <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#work">Work</AnchorLink>
-                </li> */}
-                {/* <li className="nav-item">
-                    <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#price">Price</AnchorLink>
-                </li> */}
-                {/* <li className="nav-item">
-                    <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#blog">Blog</AnchorLink>
-                </li> */}
+                
                 <li className="nav-item">
                     <AnchorLink onClick={this.toggleNavbar} offset={() => 85} className="nav-link" href="#contact">Contact</AnchorLink>
                 </li>
@@ -161,6 +105,7 @@ class Navigation extends React.Component {
                         to="/"
                         onClick={() => window.location.refresh()}
                     >
+                        <img className="w-25 h-25 mr-3" src={logo} alt="logo"/>
                         <span>b</span>lockchain
                     </Link>
                     <button 

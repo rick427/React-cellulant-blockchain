@@ -14,8 +14,11 @@ class Faq extends React.Component {
             <section className="faq-area ptb-80">
                 <div className="container">
                     <div className="section-title">
-                        <h2>Frequently Asked <span>Question</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2>Frequently Asked <span>Questions</span></h2>
+                        <p>Here are some of the most frequently asked questions posted by our users.
+                             In the event that you still stuck send us a message 
+                             via the contact us section
+                        </p>
                     </div>
                 
                     <div className="row">
@@ -25,22 +28,31 @@ class Faq extends React.Component {
                                     <AccordionItem>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                What harsh truths do you prefer to ignore?
+                                                How do i create a generic account for a actor?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                         <AccordionItemPanel>
                                             <p>
-                                                Exercitation in fugiat est ut ad ea cupidatat ut in
-                                                cupidatat occaecat ut occaecat consequat est minim minim
-                                                esse tempor laborum consequat esse adipisicing eu
-                                                reprehenderit enim.
+                                                Go to the blockchain, look for the generic role tab and do just that click the create button
                                             </p>
                                         </AccordionItemPanel>
                                     </AccordionItem>
                                     <AccordionItem>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Is free will real or just an illusion?
+                                                How do i cash out my MULA's?
+                                            </AccordionItemButton>
+                                        </AccordionItemHeading>
+                                        <AccordionItemPanel>
+                                            <p>
+                                                Just cash them out.
+                                            </p>
+                                        </AccordionItemPanel>
+                                    </AccordionItem>
+                                    <AccordionItem>
+                                        <AccordionItemHeading>
+                                            <AccordionItemButton>
+                                                How is my produce mapped to a location?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                         <AccordionItemPanel>
@@ -54,7 +66,7 @@ class Faq extends React.Component {
                                     <AccordionItem>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Is free will real or just an illusion?
+                                                I cant find my address. Where can i get it?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                         <AccordionItemPanel>
@@ -68,28 +80,12 @@ class Faq extends React.Component {
                                     <AccordionItem>
                                         <AccordionItemHeading>
                                             <AccordionItemButton>
-                                                Is free will real or just an illusion?
+                                                How do i know cellulant isn't chopping my MULA's?
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
                                         <AccordionItemPanel>
                                             <p>
-                                                In ad velit in ex nostrud dolore cupidatat consectetur
-                                                ea in ut nostrud velit in irure cillum tempor laboris
-                                                sed adipisicing eu esse duis nulla non.
-                                            </p>
-                                        </AccordionItemPanel>
-                                    </AccordionItem>
-                                    <AccordionItem>
-                                        <AccordionItemHeading>
-                                            <AccordionItemButton>
-                                                Is free will real or just an illusion?
-                                            </AccordionItemButton>
-                                        </AccordionItemHeading>
-                                        <AccordionItemPanel>
-                                            <p>
-                                                In ad velit in ex nostrud dolore cupidatat consectetur
-                                                ea in ut nostrud velit in irure cillum tempor laboris
-                                                sed adipisicing eu esse duis nulla non.
+                                                Sir you are drunk. Go and see harisson for life advice.
                                             </p>
                                         </AccordionItemPanel>
                                     </AccordionItem>
