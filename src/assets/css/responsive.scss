@@ -50,6 +50,11 @@ $template_color: #ff2c57;
             font-size: 14px;
         }
     }
+
+    .logo{
+        width: 15% !important;
+        height: 15% !important;
+    }
     
     .navbar {
 		position: relative;
@@ -59,7 +64,7 @@ $template_color: #ff2c57;
         }
         &.navbar-light {
             .navbar-brand {
-                color: #ffffff;
+                color: #111111;
                 padding-top: 0;
                 &:focus, &:hover {
                     color: #ffffff;
@@ -128,6 +133,10 @@ $template_color: #ff2c57;
         }
         .view-work {
             margin-left: 0;
+        }
+
+        .btn1{
+            margin-right: 5px;
         }
     }
 

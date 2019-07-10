@@ -18,7 +18,7 @@ const MainBannerTwo = React.memo(() => (
                                         <h4>We Are Cellulant</h4>
                                         <h1>Your Gateway <span> To Online</span> Payments</h1>
                                         <p>The brain that cordinates and secures the Agrikore and Tingg platforms respectively.</p>
-                                        <AnchorLink href="#welcome" className="btn btn-primary">Get Started</AnchorLink>
+                                        <AnchorLink href="#welcome" className="btn btn-primary btn1">Get Started</AnchorLink>
                                         <AnchorLink href="#work" className="btn btn-primary view-work">Login</AnchorLink>
                                     </div>
                                 </div>
