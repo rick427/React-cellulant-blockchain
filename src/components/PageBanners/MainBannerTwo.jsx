@@ -19,9 +19,17 @@ const MainBannerTwo = React.memo(() => (
                                         <h1>Your Gateway <span> To Online</span> Payments</h1>
                                         <p>The brain that cordinates and secures the Agrikore and Tingg platforms respectively.</p>
                                         <AnchorLink href="#welcome" className="btn btn-primary btn1">Get Started</AnchorLink>
-                                        <AnchorLink href="#work" className="btn btn-primary view-work">Login</AnchorLink>
+                                        <a 
+                                            href="http://41.73.252.236:9083/signin" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="btn btn-primary view-work"
+                                        >
+                                            Login
+                                        </a>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
