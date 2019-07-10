@@ -50,6 +50,7 @@ Default CSS
 body {
   padding: 0;
   margin: 0;
+  background: #111111;
   font-family: "Poppins", sans-serif;
 }
 
@@ -57,6 +58,7 @@ body {
   margin-bottom: 0;
   font-weight: 400;
   line-height: 1;
+  color: #fff;
 }
 
 ul {
@@ -76,11 +78,11 @@ p {
   margin-bottom: 0;
   font-weight: 300;
   line-height: 1.8;
-  color: #666666;
+  color: #dddddd;
 }
 
 a {
-  color: #222222;
+  color: #dddddd;
   text-decoration: none;
   -webkit-transition: .4s;
   transition: .4s;
@@ -109,8 +111,8 @@ img {
   vertical-align: middle;
 }
 
-.bg-f6f6f6 {
-  background: #f6f6f6;
+.bg-222222 {
+  background: #222222;
 }
 
 /*Btn Btn-Primary*/
@@ -123,19 +125,19 @@ img {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #ffffff;
   background-color: #ff2c57;
   border-color: #ff2c57;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
   color: #ff2c57;
-  background-color: #fff;
+  background-color: #ffffff;
   border-color: #ff2c57;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
-  color: #fff;
+  color: #ffffff;
   background-color: #ff2c57;
   border-color: #ff2c57;
 }
@@ -151,7 +153,7 @@ img {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
+  color: #ffffff;
   background-color: #ff2c57;
   border-color: #ff2c57;
   opacity: 1;
@@ -231,17 +233,12 @@ img {
 }
 
 /* Owl Carousel Button */
+.owl-theme .owl-controls {
+  line-height: 0;
+}
+
 .owl-theme .owl-nav {
-  margin-top: 0;
-  border-radius: 50%;
-}
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 30px;
-}
-
-.owl-theme .owl-dots .owl-dot {
-  margin-top: 50px !important;
+  margin-top: 50px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -274,21 +271,21 @@ img {
   left: 40px;
   top: 50%;
   margin-top: -20px;
-  background: rgba(255, 255, 255, 0.33) !important;
+  background: rgba(255, 255, 255, 0.33);
   width: 60px;
   text-align: center;
   height: 60px;
   line-height: 54px;
-  border-radius: 50% !important;
+  border-radius: 50%;
   font-size: 30px;
-  color: #ffffff !important;
+  color: #ffffff;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #ff2c57 !important;
-  color: #ffffff !important;
+  background: #ff2c57;
+  color: #ffffff;
 }
 
 .owl-theme .owl-nav .owl-next {
@@ -520,7 +517,7 @@ Main Banner CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #000000;
   opacity: .77;
 }
 
@@ -536,29 +533,23 @@ Main Banner CSS
   background-image: url("../images/main-bg-3.jpg");
 }
 
-.main-banner div canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .main-banner-text {
   text-align: center;
 }
 
 .main-banner-text h4 {
-  color: #fff;
+  color: #ffffff;
   font-weight: 200;
   font-size: 24px;
   letter-spacing: 1px;
 }
 
 .main-banner-text h1 {
-  color: #fff;
+  color: #ffffff;
   font-size: 55px;
+  font-weight: 200;
   margin-top: 25px;
   margin-bottom: 30px;
-  font-weight: 200;
   letter-spacing: 2px;
 }
 
@@ -567,13 +558,8 @@ Main Banner CSS
   font-weight: 600;
 }
 
-.main-banner-text h1 .Typewriter {
-  display: inline-block;
-  margin-left: 15px;
-}
-
 .main-banner-text p {
-  color: #fff;
+  color: #ffffff;
   max-width: 730px;
   margin: auto;
   margin-bottom: 30px;
@@ -626,7 +612,7 @@ Creative Banner CSS
   left: 0;
   width: 100%;
   border-width: 10rem 100vw 0 0;
-  border-color: transparent #ffffff #ffffff transparent;
+  border-color: transparent #111111 #111111 transparent;
   border-style: solid;
 }
 
@@ -639,7 +625,7 @@ Creative Banner CSS
 
 .creative-banner-two::before {
   content: "";
-  border-right: 50vw solid #ffffff;
+  border-right: 50vw solid #111111;
   border-top: 160px solid transparent;
   bottom: 0;
   right: 0;
@@ -651,7 +637,7 @@ Creative Banner CSS
 .creative-banner-two::after {
   content: '';
   position: absolute;
-  border-left: 50vw solid #ffffff;
+  border-left: 50vw solid #111111;
   border-top: 160px solid transparent;
   bottom: 0;
   height: 0;
@@ -684,6 +670,14 @@ Creative Banner CSS
 Particles Banner CSS
 ==============================
 */
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 #particles-js-two {
   width: 100%;
   height: 100%;
@@ -862,7 +856,7 @@ About Area CSS
 .about-addax ul li {
   margin-bottom: 10px;
   font-weight: 300;
-  color: #666666;
+  color: #dddddd;
 }
 
 .about-addax ul li i {
@@ -894,7 +888,7 @@ Who We Are Area CSS
   overflow: hidden;
   -webkit-box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
           box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
-  background: #ffffff;
+  background: #0F0F0F;
   padding: 50px 30px;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
@@ -990,7 +984,7 @@ Strategy Area CSS
 .about-strategy ul li {
   margin-bottom: 10px;
   font-weight: 300;
-  color: #666666;
+  color: #dddddd;
 }
 
 .about-strategy ul li:last-child {
@@ -1046,7 +1040,6 @@ CTR Area CSS
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  color: #ffffff;
 }
 
 .ctr-area .view-work {
@@ -1106,7 +1099,7 @@ Skill Area CSS
 .about-skill .progress .progress-value {
   font-size: 15px;
   font-weight: 300;
-  color: #222222;
+  color: #dddddd;
   position: absolute;
   top: -29px;
   right: 0;
@@ -1250,7 +1243,6 @@ Fun Facts Area CSS
 }
 
 .funFact p {
-  color: #ffffff;
   font-size: 18px;
 }
 
@@ -1269,7 +1261,7 @@ Team Area CSS
   left: 0;
   bottom: 0;
   width: 92%;
-  background: #ffffff;
+  background: #111111;
   margin-left: 15px;
   padding-top: 20px;
   z-index: 1;
@@ -1280,13 +1272,14 @@ Team Area CSS
 .our-team .team-content .title {
   font-size: 20px;
   font-weight: 600;
+  color: #ffffff;
   margin-bottom: 6px;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 .our-team .team-content .post {
-  color: #666666;
+  color: #dddddd;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -1331,7 +1324,7 @@ Team Area CSS
 
 .our-team .social ul li {
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 3px;
 }
 
 .our-team .social ul li a {
@@ -1363,17 +1356,10 @@ Team Area CSS
 How We Work CSS
 ==============================
 */
-.how-work {
-  background-image: url("../images/dott.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
-}
-
 .single-how-work {
   -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-  background: #ffffff;
+  background: #0F0F0F;
   padding: 35px;
   border-radius: 5px;
   -webkit-transition: all 0.5s ease-in-out 0s;
@@ -1541,21 +1527,23 @@ Why We Are Different CSS
   padding: 15px 32px;
   margin-right: 6px;
   margin-bottom: 0;
+  color: #ffffff;
   cursor: pointer;
   background: transparent;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: background ease 0.2s;
+  transition: background ease 0.2s;
   border: 1px solid #dddddd;
   border-radius: 5px;
   font-size: 18px;
 }
 
-.tabset label:hover, .tabset label:focus, .tabset label.checked {
-  background-color: #ff2c57;
+.tabset input:checked + label {
+  border-color: #ff2c57;
+  background: #ff2c57;
   color: #ffffff;
 }
 
-.tabset input:checked + label {
+.tabset label.checked {
   border-color: #ff2c57;
   background: #ff2c57;
   color: #ffffff;
@@ -1584,7 +1572,7 @@ Why We Are Different CSS
 .tab-panel .why-we-different-text ul li {
   margin-bottom: 10px;
   font-weight: 300;
-  color: #666666;
+  color: #dddddd;
 }
 
 .tab-panel .why-we-different-text ul li:last-child {
@@ -1607,24 +1595,25 @@ Work Area CSS
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   padding: 18px 20px;
   border-radius: 50px;
+  background: #0F0F0F;
 }
 
 .shorting-menu .filter {
   border: none;
-  background: #f4f4f4;
+  background: #111111;
   padding: 9px 24px;
   text-transform: capitalize;
   font-size: 16px;
   cursor: pointer;
+  margin: 0 3px;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 30px;
-  color: #000000;
-  margin: 0 4px;
+  color: #ffffff;
 }
 
-.shorting-menu .filter.active, .shorting-menu .filter:hover {
-  background: #ff2c57;
+.shorting-menu .filter.programs-filter-btn-active, .shorting-menu .filter:hover {
+  background: #ff2c57 !important;
   color: #ffffff;
 }
 
@@ -1665,7 +1654,7 @@ Work Area CSS
   position: absolute;
   bottom: 20px;
   width: 86%;
-  background: #ffffff;
+  background: #0F0F0F;
   left: 40px;
   text-align: center;
   padding-top: 20px;
@@ -1684,6 +1673,7 @@ Work Area CSS
 .single-work .work-content ul li {
   display: inline-block;
   font-size: 14px;
+  color: #dddddd;
 }
 
 .single-work:hover .work-content {
@@ -1782,7 +1772,7 @@ Pricing Area CSS
   font-size: 15px;
   line-height: 16px;
   text-transform: capitalize;
-  color: #666;
+  color: #dddddd;
   margin-left: 50px;
 }
 
@@ -1802,7 +1792,7 @@ Pricing Area CSS
 }
 
 .pricingTable .pricing-content li {
-  color: #8b8b8b;
+  color: #dddddd;
   margin-top: 16px;
 }
 
@@ -1832,45 +1822,93 @@ FAQ Area CSS
   background-repeat: no-repeat;
 }
 
-.accordion {
-  border: none;
-  border-radius: 0;
-}
-
-.accordion .accordion {
-  border: none;
-  border-radius: 0;
-}
-
-.accordion__item {
-  border-top: none;
-  background: #ffffff;
+.accordion .accordion__item {
   -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   margin-bottom: 10px;
 }
 
-.accordion__item .accordion__button {
-  background-color: #ffffff;
-  color: #000000;
-  -webkit-transition: .4s;
-  transition: .4s;
+.accordion .accordion__item + .accordion__item {
+  border-top: none;
 }
 
-.accordion__item .accordion__button:hover, .accordion__item .accordion__button:focus {
+.accordion .accordion__button {
+  background-color: #111111;
+  color: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.accordion .accordion__button:hover {
   background-color: #ff2c57;
   color: #ffffff;
 }
 
-.accordion__item .accordion__panel {
-  padding: 20px;
-  -webkit-animation: fadein 0.35s ease-in;
-          animation: fadein 0.35s ease-in;
-  border-top: 1px solid #eeeeee;
+.card {
+  background-color: transparent;
+  border-radius: 10px !important;
+  margin-bottom: 6px;
+  border: none;
+  -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
+          box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
 }
 
-.accordion__item:last-child {
+.card .card-header {
+  padding: 0;
   margin-bottom: 0;
+  border: none;
+  background: transparent;
+}
+
+.card .card-header:first-child {
+  border-radius: 0;
+}
+
+.card .card-header a {
+  display: block;
+}
+
+.card .card-header a:hover {
+  background: #ff2c57;
+}
+
+.card .card-header a h5 {
+  font-size: 17px;
+  overflow: hidden;
+  padding: 20px;
+  color: #ffffff;
+  line-height: 16px;
+  background: #ff2c57;
+}
+
+.card .card-header a.collapsed h5 {
+  color: #ffffff;
+  background: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.card .card-header a.collapsed h5:hover {
+  color: #ffffff;
+}
+
+.card .card-header a i {
+  float: right;
+  font-size: 16px;
+}
+
+.card .card-header a.collapsed .fa.fa-plus::before {
+  content: "\f067";
+}
+
+.card .card-header a .fa.fa-plus::before {
+  content: "\f068";
+}
+
+.card .card-body {
+  line-height: 1.9;
+  background: transparent;
+  color: #dddddd;
 }
 
 /*
@@ -1925,7 +1963,7 @@ Testimonials Area CSS
 .single-feedback .client-info .client-title h5 {
   font-size: 15px;
   margin-top: 13px;
-  color: #666666;
+  color: #dddddd;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -1972,12 +2010,12 @@ Blog Area CSS
 .single-blog-item {
   position: relative;
   padding: 30px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #000000;
   overflow: hidden;
+  margin-bottom: 30px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-bottom: 30px;
 }
 
 .single-blog-item::before {
@@ -1987,7 +2025,7 @@ Blog Area CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #000000;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -1996,6 +2034,10 @@ Blog Area CSS
   position: relative;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.single-blog-item span {
+  color: #dddddd;
 }
 
 .single-blog-item h4 {
@@ -2056,12 +2098,8 @@ Subscribe Area CSS
 ==============================
 */
 .subscribe-area {
-  background-image: url("../images/pattern.png");
   text-align: center;
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-color: #111111;
 }
 
 .newsletter {
@@ -2070,7 +2108,7 @@ Subscribe Area CSS
   margin-right: auto;
   -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-  background: #ffffff;
+  background: #0F0F0F;
   padding: 35px;
   border-radius: 5px;
 }
@@ -2119,13 +2157,13 @@ Contact Area CSS
 */
 #map {
   width: 100%;
-  height: 400px !important;
+  height: 400px;
 }
 
 .contact-info {
   -webkit-box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
           box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-  background: #ffffff;
+  background: #0F0F0F;
   padding: 30px;
   border-top: 3px solid #ff2c57;
   border-bottom: 3px solid #ff2c57;
@@ -2136,7 +2174,7 @@ Contact Area CSS
   padding-left: 60px;
   font-size: 16px;
   margin-bottom: 34px;
-  color: #151515;
+  color: #ffffff;
 }
 
 .contact-info ul li:last-child {
@@ -2195,7 +2233,7 @@ Contact Area CSS
   padding: 40px 30px;
   border-top: 3px solid #ff2c57;
   border-bottom: 3px solid #ff2c57;
-  background: #ffffff;
+  background: #0F0F0F;
 }
 
 .contact-form h4 {
@@ -2210,6 +2248,12 @@ Contact Area CSS
 
 .contact-form .form-control {
   border-radius: 30px;
+  border-color: #222222;
+  background: #222222;
+}
+
+.contact-form label {
+  color: #fff;
 }
 
 .contact-form .btn {
@@ -2282,8 +2326,7 @@ Blog Details Area CSS
 ==============================
 */
 .blog-details-area {
-  background-image: url("../images/pattern.png");
-  background-attachment: fixed;
+  background: #222222;
 }
 
 .blog-details-area .title {
@@ -2295,7 +2338,7 @@ Blog Details Area CSS
 .blog-details {
   -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
           box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-  background: #ffffff;
+  background: #0F0F0F;
 }
 
 .blog-details .article-img {
@@ -2323,8 +2366,8 @@ Blog Details Area CSS
 }
 
 .blog-details .article-text ul li {
-  display: inline-block;
   margin-right: 4px;
+  display: inline-block;
 }
 
 .blog-details .article-text .category a {
@@ -2343,14 +2386,14 @@ Blog Details Area CSS
 .blog-details .article-text .blockquote {
   margin-bottom: 25px;
   margin-top: 25px;
-  background: #f4f4f4;
+  background: #222222;
   padding: 30px;
   font-size: 17px;
   border-left: 4px solid #ff2c57;
 }
 
 .blog-details .article-text .blockquote p {
-  color: #000000;
+  color: #dddddd;
 }
 
 .blog-details .article-text .author-share {
@@ -2406,10 +2449,6 @@ Blog Details Area CSS
   font-size: 15px;
 }
 
-.leave-Link-reply {
-  margin-top: 35px;
-}
-
 .post-controls-buttons {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2426,7 +2465,7 @@ Blog Details Area CSS
           box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
   padding: 10px 20px;
   border-radius: 5px;
-  background: #ffffff;
+  background: #0F0F0F;
   color: #ff2c57;
 }
 
@@ -2446,7 +2485,7 @@ Blog Details Area CSS
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
-  background: #ffffff;
+  background: #0F0F0F;
 }
 
 .post-comments .single-comment.left-m {
@@ -2474,6 +2513,10 @@ Blog Details Area CSS
   margin-bottom: 15px;
 }
 
+.post-comments .single-comment .comment-content span {
+  color: #dddddd;
+}
+
 .post-comments .single-comment .comment-content p {
   margin-bottom: 15px;
 }
@@ -2487,15 +2530,21 @@ Blog Details Area CSS
   font-size: 17px;
 }
 
-.leave-a-reply {
+.leave-Link-reply {
   -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
           box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
   padding: 25px;
-  background: #ffffff;
+  background: #0F0F0F;
   margin-top: 50px;
 }
 
-.leave-a-reply .btn {
+.leave-Link-reply .form-control {
+  background: #222222;
+  color: #ffffff;
+  border: none;
+}
+
+.leave-Link-reply .btn {
   margin-top: 0px;
 }
 
@@ -2507,7 +2556,7 @@ Footer Area CSS
 .footer-area {
   text-align: center;
   padding: 50px 0;
-  background: #222222;
+  background: #111111;
 }
 
 .footer-area h4 {
@@ -2530,8 +2579,8 @@ Footer Area CSS
 }
 
 .footer-area ul li {
+  margin: 0 3px;
   display: inline-block;
-  margin: 0 4px;
 }
 
 .footer-area ul li a {
@@ -2554,7 +2603,7 @@ Footer Area CSS
 .footer-area p {
   line-height: 1;
   margin-top: 30px;
-  color: #ffffff;
+  color: #dddddd;
 }
 
 /*
@@ -2571,6 +2620,7 @@ Go Top CSS
   color: #ffffff;
   background-color: #000000;
   z-index: 1;
+  display: none;
   width: 40px;
   text-align: center;
   height: 40px;
@@ -2583,18 +2633,5 @@ Go Top CSS
 .go-top:hover {
   color: #ffffff;
   background: #ff2c57;
-}
-
-:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-:-moz-submit-invalid {
-  box-shadow: none;
-}
-
-:-moz-ui-invalid {
-  box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */

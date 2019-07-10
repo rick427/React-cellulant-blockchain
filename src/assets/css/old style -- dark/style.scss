@@ -56,12 +56,14 @@ $template_color: #ff2c57;
 body {
     padding: 0;
     margin: 0;
+    background: #111111;
     font-family: $font_family;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 	font-weight: 400;
 	line-height: 1;
+	color: #fff;
 }
 ul {
     padding-left: 0;
@@ -77,10 +79,10 @@ p {
 	margin-bottom: 0;
 	font-weight: 300;
 	line-height: 1.8;
-	color: #666666;
+	color: #dddddd;
 }
 a {
-	color: #222222;
+	color: #dddddd;
 	text-decoration: none;
     transition: .4s;
     &:hover, &:focus {
@@ -104,8 +106,8 @@ img {
         vertical-align: middle;
     }
 }
-.bg-f6f6f6 {
-    background: #f6f6f6;
+.bg-222222 {
+    background: #222222;
 }
 /*Btn Btn-Primary*/
 .btn {
@@ -115,16 +117,16 @@ img {
     transition: .4s;
 }
 .btn-primary {
-	color: #fff;
+	color: #ffffff;
 	background-color: $template_color;
     border-color: $template_color;
     &:hover, &:focus, &.disabled:hover, &.disabled:focus {
         color: $template_color;
-	    background-color: #fff;
+	    background-color: #ffffff;
 	    border-color: $template_color;
     }
     &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active {
-        color: #fff;
+        color: #ffffff;
 	    background-color: $template_color;
 	    border-color: $template_color;
     }
@@ -135,7 +137,7 @@ img {
         box-shadow: none;
     }
     &.disabled, &:disabled {
-        color: #fff;
+        color: #ffffff;
         background-color: $template_color;
         border-color: $template_color;
         opacity: 1;
@@ -207,17 +209,14 @@ img {
 }
 /* Owl Carousel Button */
 .owl-theme {
+    .owl-controls {
+        line-height: 0;
+    }
     .owl-nav {
-        margin-top: 0;
-        border-radius: 50%;
-
-        &.disabled+.owl-dots {
-            margin-top: 30px;
-        }
+        margin-top: 50px;
     }
     .owl-dots {
         .owl-dot {
-            margin-top: 50px !important;
             span {
                 width: 15px !important;
                 height: 15px !important;
@@ -247,18 +246,18 @@ img {
             left: 40px;
             top: 50%;
             margin-top: -20px;
-            background: rgba(255,255,255,0.33) !important;
+            background: rgba(255,255,255,0.33);
             width: 60px;
             text-align: center;
             height: 60px;
             line-height: 54px;
-            border-radius: 50% !important;
+            border-radius: 50%;
             font-size: 30px;
-            color: #ffffff !important;
+            color: #ffffff;
             transition: .4s;
             &:hover {
-                background: $template_color !important; 
-	            color: #ffffff !important;
+                background: $template_color;
+	            color: #ffffff;
             }
         }
         .owl-next {
@@ -473,7 +472,7 @@ Main Banner CSS
         top: 0;
         width: 100%;
         height: 100%;
-        background: #000;
+        background: #000000;
         opacity: .77;
     }
 }
@@ -486,43 +485,34 @@ Main Banner CSS
 .item-bg-three {
 	background-image: url('../images/main-bg-3.jpg');
 }
-.main-banner {
-    div {
-        canvas {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-    }
-}
 .main-banner-text {
     text-align: center;
-    
     h4 {
-        color: #fff;
-        font-weight: 200;
-        font-size: 24px;
+        color: #ffffff;
+        font: {
+            weight: 200;
+            size: 24px;
+        }
         letter-spacing: 1px;
     }
     h1 {
-        color: #fff;
-        font-size: 55px;
-        margin-top: 25px;
-        margin-bottom: 30px;
-        font-weight: 200;
+        color: #ffffff;
+        font: {
+            size: 55px;
+            weight: 200;
+        }
+        margin: {
+            top: 25px;
+            bottom: 30px;
+        }
         letter-spacing: 2px;
-
         span {
             color: #ff2c57;
             font-weight: 600;
         }
-        .Typewriter {
-            display: inline-block;
-            margin-left: 15px;
-        }
     }
     p {
-        color: #fff;
+        color: #ffffff;
         max-width: 730px;
         margin: auto;
         margin-bottom: 30px;
@@ -577,7 +567,7 @@ Creative Banner CSS
 	left: 0;
 	width: 100%;
 	border-width: 10rem 100vw 0 0;
-	border-color: transparent #ffffff #ffffff transparent;
+	border-color: transparent #111111 #111111 transparent;
 	border-style: solid;
 }
 .creative-banner-two {
@@ -587,7 +577,7 @@ Creative Banner CSS
     height: 0;
     &::before {
         content: "";
-        border-right: 50vw solid #ffffff;
+        border-right: 50vw solid #111111;
         border-top: 160px solid transparent;
         bottom: 0;
         right: 0;
@@ -598,7 +588,7 @@ Creative Banner CSS
     &::after {
         content: '';
         position: absolute;
-        border-left: 50vw solid #ffffff;
+        border-left: 50vw solid #111111;
         border-top: 160px solid transparent;
         bottom: 0;
         height: 0;
@@ -630,6 +620,13 @@ Creative Banner CSS
 Particles Banner CSS
 ==============================
 */
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 #particles-js-two {
 	width: 100%;
 	height: 100%;
@@ -783,7 +780,7 @@ About Area CSS
         li {
             margin-bottom: 10px;
             font-weight: 300;
-            color: #666666;
+            color: #dddddd;
             i {
                 color: $template_color;
                 margin-right: 5px;
@@ -812,7 +809,7 @@ Who We Are Area CSS
 	position: relative;
 	overflow: hidden;
     box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
-	background: #ffffff;
+	background: #0F0F0F;
 	padding: 50px 30px;
     transition: all 0.5s ease-in-out 0s;
     &:hover {
@@ -893,7 +890,7 @@ Strategy Area CSS
         li {
             margin-bottom: 10px;
             font-weight: 300;
-            color: #666666;
+            color: #dddddd;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -948,7 +945,6 @@ CTR Area CSS
                 right: auto;
                 bottom: 25px;
             }
-            color: #ffffff;
         }
     }
     .view-work {
@@ -1003,7 +999,7 @@ Skill Area CSS
                 size: 15px;
                 weight: 300;
             }
-            color: #222222;
+            color: #dddddd;
             position: absolute;
             top: -29px;
             right: 0;
@@ -1136,7 +1132,6 @@ Fun Facts Area CSS
         }
     }
     p {
-        color: #ffffff;
         font-size: 18px;
     }
 }
@@ -1155,7 +1150,7 @@ Team Area CSS
         left: 0;
         bottom: 0;
         width: 92%;
-        background: #ffffff;
+        background: #111111;
         margin-left: 15px;
         padding-top: 20px;
         z-index: 1;
@@ -1166,11 +1161,12 @@ Team Area CSS
                 size: 20px;
                 weight: 600;
             }
+            color: #ffffff;
             margin-bottom: 6px;
             transition: .4s;
         }
         .post {
-            color: #666666;
+            color: #dddddd;
             transition: .4s;
         }
     }
@@ -1205,7 +1201,7 @@ Team Area CSS
             transition: .4s;
             li {
                 display: inline-block;
-                margin: 0 4px;
+                margin: 0 3px;
                 a {
                     width: 35px;
                     height: 35px;
@@ -1237,15 +1233,9 @@ Team Area CSS
 How We Work CSS
 ==============================
 */
-.how-work {
-	background-image: url('../images/dott.jpg');
-	background-position: center;
-	background-size: contain;
-	background-repeat: repeat;
-}
 .single-how-work {
 	box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-	background: #ffffff;
+	background: #0F0F0F;
 	padding: 35px;
 	border-radius: 5px;
     transition: all 0.5s ease-in-out 0s;
@@ -1420,22 +1410,25 @@ Why We Are Different CSS
             right: 6px;
             bottom: 0;
         }
+        color: #ffffff;
         cursor: pointer;
         background: transparent;
-        transition: .4s;
+        transition: background ease 0.2s;
         border: 1px solid #dddddd;
         border-radius: 5px;
         font-size: 18px;
-
-        &:hover, &:focus, &.checked {
-            background-color: $template_color;
-            color: #ffffff;
-        }
     }
     input:checked + label {
         border-color: $template_color;
         background: $template_color;
         color: #ffffff;
+    }
+    label {
+        &.checked {
+            border-color: $template_color;
+            background: $template_color;
+            color: #ffffff;
+        }
     }
 }
 .tab-panel {
@@ -1462,7 +1455,7 @@ Why We Are Different CSS
             li {
                 margin-bottom: 10px;
                 font-weight: 300;
-                color: #666666;
+                color: #dddddd;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -1485,21 +1478,22 @@ Work Area CSS
 	display: inline-block;
 	box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
 	padding: 18px 20px;
-    border-radius: 50px;
+	border-radius: 50px;
+    background: #0F0F0F;
     
     .filter {
         border: none;
-        background: #f4f4f4;
+        background: #111111;
         padding: 9px 24px;
         text-transform: capitalize;
         font-size: 16px;
         cursor: pointer;
+        margin: 0 3px;
         transition: .4s;
         border-radius: 30px;
-        color: #000000;
-        margin: 0 4px;
-        &.active, &:hover {
-            background: $template_color;
+        color: #ffffff;
+        &.programs-filter-btn-active, &:hover {
+            background: $template_color !important;
             color: #ffffff;
         }
     }
@@ -1540,7 +1534,7 @@ Work Area CSS
         position: absolute;
         bottom: 20px;
         width: 86%;
-        background: #ffffff;
+        background: #0F0F0F;
         left: 40px;
         text-align: center;
         padding-top: 20px;
@@ -1556,6 +1550,7 @@ Work Area CSS
             li {
                 display: inline-block;
                 font-size: 14px;
+                color: #dddddd;
             }
         }
     }
@@ -1642,7 +1637,7 @@ Pricing Area CSS
             font-size: 15px;
             line-height: 16px;
             text-transform: capitalize;
-            color: #666;
+            color: #dddddd;
             margin-left: 50px;
         }
     }
@@ -1663,7 +1658,7 @@ Pricing Area CSS
             bottom: 25px;
         }
         li {
-            color: #8b8b8b;
+            color: #dddddd;
             margin-top: 16px;
             &:first-child {
                 margin-top: 0;
@@ -1692,38 +1687,83 @@ FAQ Area CSS
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-.accordion {
-    border: none;
-    border-radius: 0;
-
-    .accordion {
-        border: none;
-        border-radius: 0;
+.accordion{
+    .accordion__item {
+        box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
+        margin-bottom: 10px;
     }
-}
-.accordion__item {
-    border-top: none;
-    background: #ffffff;
-    box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-    margin-bottom: 10px;
-
+    .accordion__item + .accordion__item {
+        border-top: none;
+    }
     .accordion__button {
-        background-color: #ffffff;
-        color: #000000;
-        transition: .4s;
-
-        &:hover, &:focus {
+        background-color: #111111;
+        color: #ffffff;
+        transition: .5s;
+    
+        &:hover {
             background-color: $template_color;
             color: #ffffff;
         }
     }
-    .accordion__panel {
-        padding: 20px;
-        animation: fadein 0.35s ease-in;
-        border-top: 1px solid #eeeeee;
-    }
-    &:last-child {
+}
+.card {
+	background-color: transparent;
+	border-radius: 10px !important;
+	margin-bottom: 6px;
+	border: none;
+    box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
+
+    .card-header {
+        padding: 0;
         margin-bottom: 0;
+        border: none;
+        background: transparent;
+        &:first-child {
+            border-radius: 0;
+        }
+        a {
+            display: block;
+            &:hover {
+                background: $template_color;
+            }
+            h5 {
+                font-size: 17px;
+                overflow: hidden;
+                padding: 20px;
+                color: #ffffff;
+                line-height: 16px;
+                background: $template_color;
+            }
+            &.collapsed h5 {
+                color: #ffffff;
+                background: transparent;
+                transition: .4s;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+            i {
+                float: right;
+                font-size: 16px;
+            }
+            &.collapsed {
+                .fa.fa-plus {
+                    &::before {
+                        content: "\f067";
+                    }
+                }
+            }
+            .fa.fa-plus {
+                &::before {
+                    content: "\f068";
+                }
+            }
+        }
+    }
+    .card-body {
+        line-height: 1.9;
+        background: transparent;
+        color: #dddddd;
     }
 }
 
@@ -1770,7 +1810,7 @@ Testimonials Area CSS
             h5 {
                 font-size: 15px;
                 margin-top: 13px;
-                color: #666666;
+                color: #dddddd;
                 transition: .4s;
             }
         }
@@ -1813,14 +1853,12 @@ Blog Area CSS
 .single-blog-item {
 	position: relative;
 	padding: 30px;
-	border: 1px solid #eeeeee;
-	overflow: hidden;
-    background: {
-        size: cover;
-        position: center center;
-        repeat: no-repeat;
-    }
+	border: 1px solid #000000;
+    overflow: hidden;
     margin-bottom: 30px;
+	background-size: cover;
+	background-position: center center;
+    background-repeat: no-repeat;
     
     &::before {
         content: '';
@@ -1829,12 +1867,15 @@ Blog Area CSS
         top: 0;
         width: 100%;
         height: 100%;
-        background: #ffffff;
+        background: #000000;
         transition: .4s;
     }
     span, p, h4 {
         position: relative;
         transition: .4s;
+    }
+    span {
+        color: #dddddd;
     }
     h4 {
         margin: {
@@ -1902,12 +1943,8 @@ Subscribe Area CSS
 ==============================
 */
 .subscribe-area {
-	background-image: url('../images/pattern.png');
 	text-align: center;
-	background-position: center;
-	background-size: contain;
-	background-repeat: repeat;
-	background-attachment: fixed;
+    background-color: #111111;
 }
 .newsletter {
 	max-width: 750px;
@@ -1916,7 +1953,7 @@ Subscribe Area CSS
         right: auto;
     }
 	box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-	background: #ffffff;
+	background: #0F0F0F;
 	padding: 35px;
     border-radius: 5px;
     
@@ -1959,11 +1996,11 @@ Contact Area CSS
 */
 #map {
 	width: 100%;
-	height: 400px !important;
+	height: 400px;
 }
 .contact-info {
 	box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-	background: #ffffff;
+	background: #0F0F0F;
 	padding: 30px;
     border: {
         top: 3px solid $template_color;
@@ -1975,7 +2012,7 @@ Contact Area CSS
             padding-left: 60px;
             font-size: 16px;
             margin-bottom: 34px;
-            color: #151515;
+            color: #ffffff;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -2032,7 +2069,7 @@ Contact Area CSS
         top: 3px solid $template_color;
         bottom: 3px solid $template_color;
     }
-    background: #ffffff;
+    background: #0F0F0F;
     h4 {
         color: $template_color;
         margin-bottom: 25px;
@@ -2045,6 +2082,11 @@ Contact Area CSS
     }
     .form-control {
         border-radius: 30px;
+        border-color: #222222;
+        background: #222222;
+    }
+    label {
+        color: #fff;
     }
     .btn {
         margin-top: 20px;
@@ -2117,8 +2159,7 @@ Blog Details Area CSS
 ==============================
 */
 .blog-details-area {
-	background-image: url('../images/pattern.png');
-    background-attachment: fixed;
+	background: #222222;
     
     .title {
         margin: {
@@ -2130,7 +2171,7 @@ Blog Details Area CSS
 }
 .blog-details {
     box-shadow: 0 5px 10px rgba(0,9,128,0.035),0 7px 18px rgba(0,9,128,0.05);
-    background: #ffffff;
+    background: #0F0F0F;
 
     .article-img {
         position: relative;
@@ -2158,8 +2199,8 @@ Blog Details Area CSS
 
         ul {
             li {
-                display: inline-block;
                 margin-right: 4px;
+                display: inline-block;
             }
         }
         .category {
@@ -2180,13 +2221,13 @@ Blog Details Area CSS
                 bottom: 25px;
                 top: 25px;
             }
-            background: #f4f4f4;
+            background: #222222;
             padding: 30px;
             font-size: 17px;
             border-left: 4px solid $template_color;
 
             p {
-                color: #000000;
+                color: #dddddd;
             }
         }
         .author-share {
@@ -2239,9 +2280,6 @@ Blog Details Area CSS
         }
     }
 }
-.leave-Link-reply {
-    margin-top: 35px;
-}
 .post-controls-buttons {
     margin: {
         top: 50px;
@@ -2258,7 +2296,7 @@ Blog Details Area CSS
             box-shadow: 0 5px 10px rgba(0,9,128,0.035),0 7px 18px rgba(0,9,128,0.05);
             padding: 10px 20px;
             border-radius: 5px;
-            background: #ffffff;
+            background: #0F0F0F;
             color: $template_color;
             &:hover {
                 background: $template_color;
@@ -2277,7 +2315,7 @@ Blog Details Area CSS
         margin-bottom: 25px;
         position: relative;
         overflow: hidden;
-        background: #ffffff;
+        background: #0F0F0F;
 
         &.left-m {
             margin-left: 30px;
@@ -2298,6 +2336,9 @@ Blog Details Area CSS
                 text-transform: uppercase;
                 margin-bottom: 15px;
             }
+            span {
+                color: #dddddd;
+            }
             p {
                 margin-bottom: 15px;
             }
@@ -2312,12 +2353,17 @@ Blog Details Area CSS
         }
     }
 }
-.leave-a-reply {
+.leave-Link-reply {
 	box-shadow: 0 5px 10px rgba(0,9,128,0.035),0 7px 18px rgba(0,9,128,0.05);
 	padding: 25px;
-	background: #ffffff;
+	background: #0F0F0F;
     margin-top: 50px;
     
+    .form-control {
+        background: #222222;
+        color: #ffffff;
+        border: none;
+    }
     .btn {
         margin-top: 0px;
     }
@@ -2331,7 +2377,7 @@ Footer Area CSS
 .footer-area {
 	text-align: center;
 	padding: 50px 0;
-    background: #222222;
+    background: #111111;
     
     h4 {
         line-height: 22px;
@@ -2354,8 +2400,8 @@ Footer Area CSS
     }
     ul {
         li {
+            margin: 0 3px;
             display: inline-block;
-            margin: 0 4px;
 
             a {
                 width: 35px;
@@ -2378,7 +2424,7 @@ Footer Area CSS
     p {
         line-height: 1;
         margin-top: 30px;
-        color: #ffffff;
+        color: #dddddd;
     }
 }
 /*
@@ -2395,7 +2441,7 @@ Go Top CSS
 	color: #ffffff;
 	background-color: #000000;
 	z-index: 1;
-	// display: none;
+	display: none;
 	width: 40px;
 	text-align: center;
 	height: 40px;
@@ -2406,15 +2452,4 @@ Go Top CSS
         color: #ffffff;
         background: $template_color;
     }
-}
-:invalid {
-    box-shadow: none;
-}
-  
-:-moz-submit-invalid {
-    box-shadow: none;
-}
-  
-:-moz-ui-invalid {
-    box-shadow:none;
 }
