@@ -2,9 +2,9 @@ import React from 'react';
 import WaterWave from 'react-water-wave';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import image from '../../assets/images/bitcoin.jpg';
- 
+
 const MainBannerTwo = React.memo(() => (
-    <WaterWave 
+    <WaterWave
         style={{ width: '100%', height: '100%', backgroundSize: 'cover' }}
         imageUrl={image}>
         {() => (
@@ -19,9 +19,9 @@ const MainBannerTwo = React.memo(() => (
                                         <h1>Your Gateway <span> To Online</span> Payments</h1>
                                         <p>The brain that cordinates and secures the Agrikore and Tingg platforms respectively.</p>
                                         <AnchorLink href="#welcome" className="btn btn-primary btn1">Get Started</AnchorLink>
-                                        <a 
-                                            href="http://41.73.252.236:9083/signin" 
-                                            target="_blank" 
+                                        <a
+                                            href="http://41.73.252.236:9083/signin"
+                                            target="_blank"
                                             rel="noopener noreferrer"
                                             className="btn btn-primary view-work"
                                         >
@@ -29,7 +29,7 @@ const MainBannerTwo = React.memo(() => (
                                         </a>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -38,5 +38,5 @@ const MainBannerTwo = React.memo(() => (
         )}
     </WaterWave>
 ));
- 
+
 export default MainBannerTwo;
